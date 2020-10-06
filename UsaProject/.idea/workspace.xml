@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3d3c093e-00c3-4431-a617-8456b2622ec4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="ProjectId" id="1iT3OpKZOpKJKlN3ORx1qP3Rp8W" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager" selected="Go Build.go build main.go">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="UsaProject" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="UsaProject" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestDeleteCustomerByByLegalEntityID in UsaProject/Controller (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="UsaProject" />
+      <working_directory value="$PROJECT_DIR$/Controller" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="UsaProject/Controller" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestDeleteCustomerByByLegalEntityID\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestDeleteCustomerByByLegalEntityID in UsaProject/Controller" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="UsaProject" />
+      <working_directory value="$PROJECT_DIR$/Controller" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="UsaProject/Controller" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestDeleteCustomerByByLegalEntityID\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestUpdateCustomerByLegalEntityID in UsaProject/Controller (2)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="UsaProject" />
+      <working_directory value="$PROJECT_DIR$/Controller" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="UsaProject/Controller" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestUpdateCustomerByLegalEntityID\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test UsaProject/Controller" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="UsaProject" />
+      <working_directory value="$PROJECT_DIR$/Controller" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="UsaProject/Controller" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Test.TestUpdateCustomerByLegalEntityID in UsaProject/Controller (2)" />
+      <item itemvalue="Go Test.TestDeleteCustomerByByLegalEntityID in UsaProject/Controller" />
+      <item itemvalue="Go Test.TestDeleteCustomerByByLegalEntityID in UsaProject/Controller (1)" />
+      <item itemvalue="Go Test.go test UsaProject/Controller" />
+      <item itemvalue="Go Build.go build main.go" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Test.go test UsaProject/Controller" />
+        <item itemvalue="Go Test.TestDeleteCustomerByByLegalEntityID in UsaProject/Controller (1)" />
+        <item itemvalue="Go Test.TestDeleteCustomerByByLegalEntityID in UsaProject/Controller" />
+        <item itemvalue="Go Test.TestUpdateCustomerByLegalEntityID in UsaProject/Controller (2)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d3c093e-00c3-4431-a617-8456b2622ec4" name="Default Changelist" comment="" />
+      <created>1601917724834</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601917724834</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601923737125">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1601923737125" />
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1601971045374">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1601971045374" />
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1601989280865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601989280865" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1601989280865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601989280865" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1601989280865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601989280865" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1601989280865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601989280865" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1601989280865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601989280865" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1601989280865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601989280865" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1601989280865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601989280865" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1601989280865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601989280865" />
+    <state x="372" y="22" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601984627152">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="372" y="22" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1601984627152" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/Controller/controller.go</url>
+          <line>25</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/Controller/controller_test.go</url>
+          <line>30</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/Controller/controller_test.go</url>
+          <line>39</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/Controller/controller_test.go</url>
+          <line>79</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/repositories/customer.go</url>
+          <line>71</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/Controller/controller.go</url>
+          <line>61</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/repositories/customer.go</url>
+          <line>56</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/UsaProject$TestUpdateCustomerByLegalEntityID_in_UsaProject_Controller.out" NAME="TestUpdateCustomerByLegalEntityID in UsaProject/Controller Coverage Results" MODIFIED="1601985551712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/UsaProject$TestGetEntries_in_UsaProject_Controller__5_.out" NAME="TestGetEntries in UsaProject/Controller (5) Coverage Results" MODIFIED="1601981645062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/UsaProject$TestGetEntries_in_UsaProject_Controller__2_.out" NAME="TestGetEntries in UsaProject/Controller (2) Coverage Results" MODIFIED="1601979432353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/UsaProject$TestUpdateCustomerByLegalEntityID_in_UsaProject_Controller__2_.out" NAME="TestUpdateCustomerByLegalEntityID in UsaProject/Controller (2) Coverage Results" MODIFIED="1601985701602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/UsaProject$TestDeleteCustomerByByLegalEntityID_in_UsaProject_Controller__1_.out" NAME="TestDeleteCustomerByByLegalEntityID in UsaProject/Controller (1) Coverage Results" MODIFIED="1601987895564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/UsaProject$TestGetEntries_in_UsaProject_Controller__3_.out" NAME="TestGetEntries in UsaProject/Controller (3) Coverage Results" MODIFIED="1601970409328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/UsaProject$TestInsertCustomer_in_UsaProject_Controller.out" NAME="TestInsertCustomer in UsaProject/Controller Coverage Results" MODIFIED="1601984424582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/UsaProject$TestSearchCustomer_in_UsaProject_Controller.out" NAME="TestSearchCustomer in UsaProject/Controller Coverage Results" MODIFIED="1601985308605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/UsaProject$TestGetCustomerByLegalEntityID_in_UsaProject_Controller__1_.out" NAME="TestGetCustomerByLegalEntityID in UsaProject/Controller (1) Coverage Results" MODIFIED="1601985215384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/UsaProject$TestGetEntries_in_UsaProject_Controller__4_.out" NAME="TestGetEntries in UsaProject/Controller (4) Coverage Results" MODIFIED="1601981113701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
