@@ -30,7 +30,8 @@ func init() {
 	}
 	//open a db connection
 	fmt.Println(config)
-	dbUri := fmt.Sprintf("host=%s user=%s dbname=%s sslmode=disable password=%s", config.Database.Host, config.Database.User, config.Database.Databasename, config.Database.Password)
+	//host := fmt.Sprintf("%s:%d",config.Database.Host,config.Database.Port)
+	dbUri := fmt.Sprintf("host=%s port=%d user=%s dbname=%s sslmode=disable password=%s", config.Database.Host, config.Database.Port,config.Database.User, config.Database.Databasename, config.Database.Password)
 	db, err = gorm.Open("postgres",dbUri )
 	if err != nil {
 		panic("failed to connect database")
@@ -89,7 +90,7 @@ func DeleteCustomerDataByEntityId(legalEntityId int) ( error) {
 		return  res.Error
 	}
 	resp  := db.Delete(&customer);
- if resp.Error !=nil{
+	if resp.Error !=nil{
 		return resp.Error
 	}
 	return nil
