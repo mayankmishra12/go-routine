@@ -1,12 +1,18 @@
 package repositories
 
 import (
+	config2 "UsaProject/config"
 	"UsaProject/model"
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
+	"os"
+	"path/filepath"
 )
+var conFilePath = "../config.yaml"
 const (
+	configDir = ""
+	configFile  = "config.yaml"
 	host     = "localhost"
 	port     = 5432
 	user     = "postgres"
@@ -15,9 +21,16 @@ const (
 )
 var db *gorm.DB
 func init() {
+	cfile := filepath.Join(configDir,configFile)
+	config, err := config2.NewConfig(cfile)
+	if err != nil {
+		errMsg := fmt.Sprintf("error while reading config path")
+		panic(errMsg)
+		os.Exit(1)
+	}
 	//open a db connection
-	var err error
-	dbUri := fmt.Sprintf("host=%s user=%s dbname=%s sslmode=disable password=%s", host, user, dbname, password)
+	fmt.Println(config)
+	dbUri := fmt.Sprintf("host=%s user=%s dbname=%s sslmode=disable password=%s", config.Database.Host, config.Database.User, config.Database.Databasename, config.Database.Password)
 	db, err = gorm.Open("postgres",dbUri )
 	if err != nil {
 		panic("failed to connect database")
@@ -61,7 +74,7 @@ func UpdateCustomerDatalegalEntityId(legalEntityId int, customerData *model.Cust
 		return nil, res.Error
 	}
 	customer = getUpdateCustomerData(customer,*customerData)
-	res =db.Save(&customer)
+	res =db.Model(&model.Customer{}).Where(`legal_entity_id =?`,legalEntityId).Update(&customerData)
 
 	if res.Error != nil {
 		return nil,res.Error

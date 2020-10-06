@@ -12,6 +12,6 @@ type Customer struct {
 	LastName               string `json:"lastName"`
 	LegalEntityStage       string `json:"legalEntityStage"`
 	LegalEntityType        string `json:"legalEntityType"`
-	LegalEntityID         int    `gorm:"column:legal_entity_id;not null;AUTO_INCREMENT; primaryKey"`
+	LegalEntityID         int    `gorm:"column:legal_entity_id;not null;AUTO_INCREMENT; primaryKey;"`
 	CreatedAt    time.Time `gorm:"autoCreateTime"`
 }
