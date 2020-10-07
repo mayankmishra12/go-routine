@@ -26,6 +26,6 @@ func GetJsonFile(c * gin.Context){
 		fmt.Println("return error ")
 	}
 	c.Writer.Header().Add("Content-Type", "application/octet-stream")
-	c.FileAttachment(filepathwithextension,filepath)
+	c.FileAttachment(filepathwithextension,fileName)
 	fmt.Println(files)
 }
