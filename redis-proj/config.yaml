@@ -1,0 +1,5 @@
+
+application:
+  basepath: ''
+  jsonfilesDir :
+  port: 12
