@@ -17,7 +17,7 @@ func setUpRoutes () *gin.Engine{
 	v1 := router.Group("/api/customer")
 	{
 		v1.POST("/", controller.AddData)
-		v1.GET("/",)
+
 	}
 	return router
 
