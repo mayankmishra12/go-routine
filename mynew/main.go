@@ -8,8 +8,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3"
-	"github.com/aws/aws-sdk-go/service/s3/s3manager"
-	"io/ioutil"
+	"io"
 	"net/http"
 
 	"os"
@@ -28,6 +27,7 @@ func handler(req events.ALBTargetGroupRequest ) (*events.ALBTargetGroupResponse 
 	sess, _ := session.NewSession(&aws.Config{
 		Region: aws.String(Region)},
 	)
+
 	if req.Path == "" {
      return getListOfJobs(sess)
 	} else {
@@ -36,63 +36,31 @@ func handler(req events.ALBTargetGroupRequest ) (*events.ALBTargetGroupResponse 
 }
 
 func getJobs(sess *session.Session,jobId string)  (*events.ALBTargetGroupResponse,error){
-	file, err := os.Create("tempfile")
+	awsbucket := bucket
+	awsKey := jobId
+	s3resp, err := s3.New(sess).GetObject(&s3.GetObjectInput{
+		Bucket: &awsbucket,
+		Key:    &awsKey,
+	})
 	if err != nil {
-		return apiResponse(http.StatusInternalServerError, ErrorBody{
-			aws.String(err.Error()),
-		})
+		return nil, err
 	}
-	downloader := s3manager.NewDownloader(sess)
-
-	numBytes, err := downloader.Download(file,
-		&s3.GetObjectInput{
-			Bucket: aws.String(bucket),
-			Key:    aws.String(jobId),
-		})
-	if err != nil {
-		return apiResponse(http.StatusInternalServerError, ErrorBody{
-			aws.String(err.Error()),
-		})
-	}
-	fmt.Println("Downloaded", file.Name(), numBytes, "bytes")
-	result, err := ioutil.ReadAll(file)
-	if err != nil {
-		return apiResponse(http.StatusInternalServerError, ErrorBody{
-			aws.String(err.Error()),
-		})
-	}
-	return apiResponse(http.StatusCreated, result)
+	return apiResponse(http.StatusOK, s3resp.Body)
 
 }
-func getListOfJobs(sess *session.Session)(*events.ALBTargetGroupResponse,error){
-	file, err := os.Create("tempfile")
+func getListOfJobs(sess *session.Session)(*events.ALBTargetGroupResponse,error) {
+	awsbucket := bucket
+	awsKey := FilesWithJobList
+	s3resp, err := s3.New(sess).GetObject(&s3.GetObjectInput{
+		Bucket: &awsbucket,
+		Key:    &awsKey,
+	})
 	if err != nil {
-		return apiResponse(http.StatusInternalServerError, ErrorBody{
-			aws.String(err.Error()),
-		})
+		return nil, err
 	}
-	downloader := s3manager.NewDownloader(sess)
-
-	numBytes, err := downloader.Download(file,
-		&s3.GetObjectInput{
-			Bucket: aws.String(bucket),
-			Key:    aws.String(FilesWithJobList),
-		})
-	if err != nil {
-		return apiResponse(http.StatusInternalServerError, ErrorBody{
-			aws.String(err.Error()),
-		})
-	}
-	fmt.Println("Downloaded", file.Name(), numBytes, "bytes")
-	result, err := ioutil.ReadAll(file)
-	if err != nil {
-		return apiResponse(http.StatusInternalServerError, ErrorBody{
-			aws.String(err.Error()),
-		})
-	}
-	return apiResponse(http.StatusCreated, result)
-
+	return apiResponse(http.StatusOK, s3resp.Body)
 }
+
 func main()  {
 	lambda.Start(handler)
 	f,err := os.Open("mishra")
@@ -103,17 +71,12 @@ func main()  {
 }
 
 
-func apiResponse(status int, body interface{}) (*events.ALBTargetGroupResponse, error) {
+func apiResponse(status int, body io.ReadCloser) (*events.ALBTargetGroupResponse, error) {
 	resp := events.ALBTargetGroupResponse{Headers: map[string]string{"Content-Type": "application/json"}}
-	resp.StatusCode = status
-	switch  body.(type) {
-	case  []byte:
+	    resp.StatusCode = status
 		stringBody, _ := json.Marshal(body)
 		resp.Body = string(stringBody)
 		return &resp, nil
-	default:
-		resp.StatusCode = http.StatusInternalServerError
-		return &resp,nil
-	}
+
 
 }
