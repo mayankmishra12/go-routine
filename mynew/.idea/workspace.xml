@@ -27,7 +27,6 @@
       <change beforePath="$PROJECT_DIR$/../UsaProject/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../UsaProject/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UsaProject/repositories/customer.go" beforeDir="false" afterPath="$PROJECT_DIR$/../UsaProject/repositories/customer.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../awsNewTask/lambdacontroller/lamba.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awsNewTask/lambdacontroller/lamba.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../redis-proj/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-proj/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../redis-proj/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-proj/main.go" afterDir="false" />

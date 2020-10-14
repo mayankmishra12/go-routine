@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/aws/aws-sdk-go/aws"
@@ -10,8 +9,6 @@ import (
 	"github.com/aws/aws-sdk-go/service/s3"
 	"io"
 	"net/http"
-
-	"os"
 )
 
 const (
@@ -63,11 +60,7 @@ func getListOfJobs(sess *session.Session)(*events.ALBTargetGroupResponse,error) 
 
 func main()  {
 	lambda.Start(handler)
-	f,err := os.Open("mishra")
-	if err!= nil {
-		fmt.Print("my files list", err)
-	}
-	fmt.Print(f)
+	
 }
 
 
